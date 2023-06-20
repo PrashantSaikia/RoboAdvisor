@@ -1,0 +1,6 @@
+yfinance
+trading-calendars
+exchange-calendars
+stockstats
+parsel
+finnhub-python
