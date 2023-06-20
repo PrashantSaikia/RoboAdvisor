@@ -42,7 +42,7 @@ def chat_response(OPENAI_API_KEY, FINNHUB_API_KEY, ticker_symbol):
 
         prompt = f"The news about {ticker_symbol} are:\n\n {headlines}. \
         \n\nPlease give a brief summary of these news and analyse the possible trend of the stock price of the {ticker_symbol} Company.\
-        \n\nPlease give trends-based results taking into account different possible assumptions.\n\n"
+        \nPlease give trends-based results taking into account different possible scenarios.\n\n"
 
         Robo_advisor = Openai_Chat_Agent(chat_agent_args)
         res = Robo_advisor.get_single_response(prompt)
@@ -78,6 +78,8 @@ to provide personalized recommendations on asset allocation, investment diversif
 PROFESSOR helps you identify opportunities for growth and develop robust financial strategies. Additionally, PROFESSOR focuses on optimization, continually 
 monitoring and adjusting your financial plans to ensure they align with changing market conditions. It can adapt its recommendations based on real-time data, 
 helping you stay ahead of the curve and make informed decisions in a dynamic financial landscape.
+
+It takes PROFESSOR about 5 minutes to do the research and show you its analysis.
 
 HOW IT WORKS - You enter a ticker symbol of a company you are interested in, and PROFESSOR will collect and study information and news about it in the last 7 days.
 Based on its research, PROFESSOR then gives its recommendations - which are not to be taken as financial advice.
