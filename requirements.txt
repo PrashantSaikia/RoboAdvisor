@@ -6,4 +6,4 @@ parsel
 finnhub-python
 gradio
 pandas
-ta-lib
+TA-Lib
