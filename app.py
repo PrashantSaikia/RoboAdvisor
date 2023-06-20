@@ -89,8 +89,7 @@ Get your OpenAI API key here: https://platform.openai.com/account/api-keys
 Get your Finnhub API key here: https://finnhub.io/dashboard
 '''
 
-title = '''P R O F E S S O R 🤖\
-        Personal Robotic Oracle for Financial Evaluation of Smart Strategies and Optimized Research'''
+title = '''P R O F E S S O R – Personal Robotic Oracle for Financial Evaluation of Smart Strategies and Optimized Research'''
 
 # article = "<p style='text-align: center'>Made by [Prashant Saikia](https://github.com/prashantsaikia)</p>"
 article = "\n\n<p style='text-align: center'>Made by <a href='https://github.com/prashantsaikia'>Prashant Saikia</a></p>"
