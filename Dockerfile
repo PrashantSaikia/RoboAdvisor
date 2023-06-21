@@ -5,7 +5,6 @@ WORKDIR /code
 COPY ./requirements.txt /code/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-RUN pip install TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
 
 # Give user access to write (for the locally saved vectorstore parquet files)
 RUN useradd -m -u 1000 user
