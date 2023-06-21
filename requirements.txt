@@ -6,3 +6,4 @@ parsel
 finnhub-python
 gradio
 pandas
+openai
