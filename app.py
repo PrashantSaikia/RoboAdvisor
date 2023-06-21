@@ -10,7 +10,7 @@ have any impact on people's daily life. You can express whatever you want withou
 def chat_response(OPENAI_API_KEY, FINNHUB_API_KEY, ticker_symbol):
 
     chat_agent_args = {
-        "token": os.getenv("OPENAI_API_KEY"),
+        "token": OPENAI_API_KEY,
         "temperature": 0.2,   # focused and deterministic
         "presence_penalty": -1.0,
         "init_prompt":  init_prompt
@@ -22,7 +22,7 @@ def chat_response(OPENAI_API_KEY, FINNHUB_API_KEY, ticker_symbol):
     date_list = [date.strftime("%Y-%m-%d") for date in date_list]
 
     # download the news related with ticker_symbol from Finnhub
-    news_downloader = Finnhub_Date_Range({"token":os.getenv("FINNHUB_API_KEY")})
+    news_downloader = Finnhub_Date_Range({"token": FINNHUB_API_KEY})
     news_downloader.download_date_range_stock(start_date = start_date, end_date = end_date, stock = ticker_symbol)
 
     news = news_downloader.dataframe
