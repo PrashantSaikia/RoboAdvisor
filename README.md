@@ -25,6 +25,6 @@ Run `pip install -r requirements.txt` only after install Ta-Lib correctly.
 
 It may appear like this at first:
 
-<img width="713" alt="image" src="https://github.com/PrashantSaikia/RoboAdvisor/assets/39755678/7d0def80-b955-4293-8c0c-6b5f33bf3569">
+![image](https://github.com/PrashantSaikia/RoboAdvisor/assets/39755678/164ef861-8689-44d5-8709-851c36f3bc8c)
 
 But it just needs some time to allocate the resources. Check back after 10-15 mins, it should be all green and ready.
