@@ -1,5 +1,18 @@
 # RoboAdvisor
 
+## Steps to install Ta-Lib in Linux
+
+```
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xzf ta-lib-0.4.0-src.tar.gz
+cd ta-lib/
+./configure --prefix=/usr
+make
+sudo make install
+pip install ta-lib
+```
+Run `pip install -r requirements.txt` only after install Ta-Lib correctly.
+
 ## Steps for Kuberenetes deplolyment is GCP
 
 1. docker build -t robo_advisor .
