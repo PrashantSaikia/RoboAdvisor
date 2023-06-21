@@ -1,8 +1,13 @@
+  GNU nano 5.4                                                                                       Dockerfile                                                                                                
 FROM python:3.9
 
 WORKDIR /code
 
 COPY ./requirements.txt /code/requirements.txt
+COPY ./install_talib.sh /code/install_talib.sh
+
+RUN chmod +x /code/install_talib.sh
+RUN /code/install_talib.sh
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
