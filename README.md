@@ -1,6 +1,6 @@
 # RoboAdvisor
 
-## How it works
+## What it does and how it works
 1) User gives a stock ticker symbol
 2) The bot queries the Finnhub API and searches for articles, news, Tweets, etc about this company over the last 7 days and downloads them
 3) It then converts the documents into smaller chunks, and uses LLM vector embeddings to convert the documents into a vector index DB, for easy querying
