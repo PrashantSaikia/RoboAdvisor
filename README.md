@@ -1,5 +1,15 @@
 # RoboAdvisor
 
+## How it works
+1) User gives a stock ticker symbol
+2) The bot queries the Finnhub API and searches for articles, news, Tweets, etc about this company over the last 7 days and downloads them
+3) It then converts the documents into smaller chunks, and uses LLM vector embeddings to convert the documents into a vector index DB, for easy querying
+4) When the user asks (prompts) a question, a vector embedding of the query/prompt is calculated, and a similarity search of this prompt vector is performed against the vector index DB
+5) The top 'k' chunks are retrieved according to the vector similarity search (in this particular case, I am using the FAISS algorithm to perform the similarity search)
+6) The bot then queries the OpenAI GPT-3.5-Turbo API to query on those retrieved chunks, and returns a response.
+
+In short, given a stock ticker symbol, this app uses GPT-3.5 to give investment outlook about it by reading articles, tweets and news about that company
+
 ## Steps to install Ta-Lib in Linux
 
 ```
