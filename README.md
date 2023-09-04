@@ -50,3 +50,4 @@ docker pull kristada673/roboadvisor
 docker run -p 8080:8080 kristada673/roboadvisor
 ```
 
+![image](https://github.com/PrashantSaikia/RoboAdvisor/assets/39755678/f0efb41f-3fe2-4e6e-9e26-f69febd7d9f4)
