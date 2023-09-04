@@ -38,3 +38,15 @@ It may appear like this at first:
 ![image](https://github.com/PrashantSaikia/RoboAdvisor/assets/39755678/164ef861-8689-44d5-8709-851c36f3bc8c)
 
 But it just needs some time to allocate the resources. Check back after 10-15 mins, it should be all green and ready.
+
+## UPDATE: Currently I've stopped running in GCP Kubernetes cluster to save costs
+
+I have instead uploaded the Docker image in Docker Hub under the name `kristada673/roboadvisor`.
+
+So, you can pull the image from there and run it locally:
+
+```
+docker pull kristada673/roboadvisor
+docker run -p 8080:8080 kristada673/roboadvisor
+```
+
