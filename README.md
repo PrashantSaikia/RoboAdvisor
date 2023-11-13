@@ -23,15 +23,16 @@ pip install ta-lib
 ```
 Run `pip install -r requirements.txt` only after install Ta-Lib correctly.
 
-## Steps for Kuberenetes deplolyment is GCP
+## Steps for Kuberenetes deplolyment in GCP
 
-1. docker build -t robo_advisor .
-2. docker tag robo_advisor gcr.io/asom-barta-qna-bot/robo_advisor
-3. docker push gcr.io/asom-barta-qna-bot/robo_advisor
-4. Go to "container registry" and verify that the docker image is present
-5. Go to 'Kubernetes Engine' in the Google Cloud Console and create a new Kubernetes cluster in Autopilot mode. Select a location in Asia. Wait for the k8s cluster to be created.
-6. Once the cluster is created, create a deployment. Select the docker image from container registry, give a suitable name to the deployment.
-7. Click on "Expose deployment as a new service", and set the port as 7860 (since the default port used by the Gradio app is 7860), and deploy.
+1. gcloud services enable containerregistry.googleapis.com
+2. docker build -t robo_advisor .
+3. docker tag robo_advisor gcr.io/asom-barta-qna-bot/robo_advisor
+4. docker push gcr.io/asom-barta-qna-bot/robo_advisor
+5. Go to "container registry" and verify that the docker image is present
+6. Go to 'Kubernetes Engine' in the Google Cloud Console and create a new Kubernetes cluster in Autopilot mode. Select a location in Asia. Wait for the k8s cluster to be created.
+7. Once the cluster is created, create a deployment. Select the docker image from container registry, give a suitable name to the deployment.
+8. Click on "Expose deployment as a new service", and set the port as 7860 (since the default port used by the Gradio app is 7860), and deploy.
 
 It may appear like this at first:
 
